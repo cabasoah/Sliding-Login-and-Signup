@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Adomako Basoah (CodeSmith)">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- font awesome -->
+    <link href="fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <!-- external stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>sign in and sign out</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- sign up container-->
+        <div class="form-container signUpContainer">
+            <form action="#">
+                <h1> Create An Account </h1>
+                <!-- list of all social media handle-->
+                <div class="socialListContainer">
+                    <a href="#" class="social"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-google-plus-g"></i></a>
+                </div>
+                <span> Or you your email to register </span>
+                <input type="text" name="name" id="fullname" placeholder="Enter your Fullname">
+                <input type="email" name="email" id="email" placeholder="Enter your Email">
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <button> Sign Up </button>
+            </form>
+        </div><!-- end of sign up container-->
+
+        <!-- sign in container-->
+        <div class="form-container signInContainer">
+            <form action="#">
+                <h1> Log In </h1>
+                 <!-- list of all social media handle-->
+                 <div class="socialListContainer">
+                    <a href="#" class="social"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"> <i class="fab fa-google-plus-g"></i></a>
+                </div>
+                    <span> Or use already created account </span>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                    <a href="#">Forget your Password</a>
+                    <button> Log In </button>
+            </form>
+        </div>
+
+        <!-- overlay screen for displaying the side-->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1> Welcome back </h1>
+                    <p> To stay intouch with us, please login with your personal info</p>
+                    <button class="takeOver" id="SignIn"> Sign In </button>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                        <h1> hello! </h1>
+                        <p> Enter personal details to join us </p>
+                        <button class="takeOver" id="SignUp"> Sign Up </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- external js linking -->
+    <script src="main.js"></script>
+</body>
+</html>
